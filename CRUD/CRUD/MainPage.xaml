@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Registration"
+             x:Class="CRUD.MainPage">
+
+    <StackLayout Orientation="Vertical" Margin="20,0" VerticalOptions="Center">
+        <Frame HeightRequest='150' CornerRadius="100" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="150">
+            <Image Source=""/>
+        </Frame>
+        <Label Text="Name" FontSize="18" FontAttributes="Bold"></Label>
+        <Entry x:Name="txtname" Placeholder="Enter your name" FontSize="20"/>
+        <Label Text="Gender" FontSize="18" FontAttributes="Bold"></Label>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+            <RadioButton x:Name="Rdbmale" Text="Male" FontSize="18" FontAttributes="Bold"/>
+            <RadioButton x:Name="Rdbfemale" Text="Female" FontSize="18" FontAttributes="Bold"/>
+        </StackLayout>
+        <Label Text="Date of Birth" FontSize="18" FontAttributes="Bold"></Label>
+        <DatePicker x:Name="txtdob"/>
+        <Label Text="Address" FontSize="18" FontAttributes="bold"></Label>
+        <Editor x:Name="txtaddress"/>
+        <Button Text="Save Record" x:Name="btnSave" Clicked="btnSave_Clicked"/>
+    </StackLayout>
+
+</ContentPage>
